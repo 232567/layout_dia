@@ -1,0 +1,51 @@
+@use '../utils/index' as *;
+
+.hero {
+  position: relative;
+  z-index: 1;
+
+  overflow: hidden;
+
+  padding: 160px 0 140px;
+
+  color: $color-white;
+
+  background-color: $color-black;
+
+  &__container {
+    @include container;
+
+    position: relative;
+    z-index: 3;
+    max-width: 700px;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    opacity: 0.9;
+  }
+
+  &__button {
+    display: inline-block;
+
+    padding: 16px 32px;
+    border-radius: 8px;
+
+    font-weight: 600;
+    color: $color-black;
+
+    background: $color-white;
+
+    transition: 0.3s;
+
+    &:hover {
+      background: color.adjust($color-white, $lightness: 10%);
+    }
+  }
+}

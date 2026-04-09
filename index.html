@@ -1,19 +1,401 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Dia</title>
-    <link
-      rel="stylesheet"
-      href="src/styles/main.scss"
-    />
-  </head>
-  <body>
-    <h1>Dia</h1>
-    <script src="src/scripts/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dia Agency</title>
+
+  <link rel="stylesheet" href="./src/styles/main.css" />
+  <script src="./src/scripts/main.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header" id="home">
+    <div class="header__container container">
+      <img
+        src="./src/images/logo/dia-logo.svg"
+        alt="Dia Agency Logo"
+        class="header__logo"
+      />
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li><a href="#home" class="header__link">Home</a></li>
+          <li><a href="#who" class="header__link">About</a></li>
+          <li><a href="#expertise" class="header__link">Services</a></li>
+          <li><a href="#portfolio" class="header__link">Portfolio</a></li>
+          <li><a href="#contact" class="header__link">Contact</a></li>
+          <li><a href="#blog" class="header__link">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__container">
+      <h1 class="hero__title">Strategic Agency</h1>
+      <p class="hero__subtitle">We help you grow your business</p>
+      <a href="#contact" class="hero__button">Get Started</a>
+    </div>
+  </section>
+
+  <main class="main">
+
+    <section class="agency" id="agency">
+      <div class="container agency__container">
+
+        <div class="agency__content">
+          <h2 class="agency__title">About Our Agency</h2>
+          <p class="agency__description">
+            We are a strategic digital agency focused on helping brands grow through design,
+            technology and meaningful experiences.
+          </p>
+        </div>
+
+        <div class="agency__slider">
+          <img
+            src="./src/images/slider/slide-img-1.jpg"
+            alt="Business meeting"
+            class="agency__image"
+          />
+
+          <div class="agency__arrows">
+            <button class="agency__arrow agency__arrow--left">
+              <img src="./src/images/slider/arrow-right.svg" alt="Previous slide">
+            </button>
+
+            <button class="agency__arrow agency__arrow--right">
+              <img src="./src/images/slider/arrow-right.svg" alt="Next slide">
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="who" id="who">
+      <div class="container who__container">
+
+        <div class="who__content">
+          <h2 class="who__title">Who we are</h2>
+
+          <p class="who__text">
+            We are a multidisciplinary digital agency focused on building meaningful
+            experiences that connect brands with people.
+          </p>
+
+          <p class="who__text">
+            From brand identity to digital products, we partner with companies to
+            transform ideas into powerful solutions.
+          </p>
+
+          <p class="who__text">
+            Our team is driven by curiosity, collaboration and a commitment to
+            excellence — delivering results that are visually compelling and strategically impactful.
+          </p>
+        </div>
+
+        <div class="who__image">
+          <img
+            src="./src/images/what-we-do/what-we-do-1.jpg"
+            alt="Creative team working together"
+            class="who__image-img"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <section class="expertise" id="expertise">
+      <div class="container expertise__container">
+
+        <h2 class="expertise__title">Our expertise</h2>
+
+        <div class="expertise__cards">
+
+          <div class="expertise__card">
+            <img src="./src/images/features/features-item-icon-1.svg" alt="" class="expertise__icon">
+            <h3 class="expertise__card-title">Branding</h3>
+            <p class="expertise__card-text">Creating strong brand identities</p>
+          </div>
+
+          <div class="expertise__card">
+            <img src="./src/images/features/features-item-icon-2.svg" alt="" class="expertise__icon">
+            <h3 class="expertise__card-title">Design</h3>
+            <p class="expertise__card-text">Innovative and user-friendly designs</p>
+          </div>
+
+          <div class="expertise__card">
+            <img src="./src/images/features/features-item-icon-3.svg" alt="" class="expertise__icon">
+            <h3 class="expertise__card-title">Strategy</h3>
+            <p class="expertise__card-text">Effective business strategies</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container process__container">
+
+        <h2 class="process__title">Our process</h2>
+
+        <div class="process__cards">
+
+          <div class="process__card">
+            <img src="./src/images/features/features-item-icon-1.svg" alt="" class="process__icon">
+            <h3 class="process__card-title">Research</h3>
+            <p class="process__card-text">We analyze your business and market.</p>
+            <a href="#" class="process__learn">
+              <span>Learn more</span>
+              <img src="./src/images/icons/arrow-right.svg" alt="">
+            </a>
+          </div>
+
+          <div class="process__card">
+            <img src="./src/images/features/features-item-icon-2.svg" alt="" class="process__icon">
+            <h3 class="process__card-title">Planning</h3>
+            <p class="process__card-text">We create a strategic roadmap.</p>
+            <a href="#" class="process__learn">
+              <span>Learn more</span>
+              <img src="./src/images/icons/arrow-right.svg" alt="">
+            </a>
+          </div>
+
+          <div class="process__card">
+            <img src="./src/images/features/features-item-icon-3.svg" alt="" class="process__icon">
+            <h3 class="process__card-title">Execution</h3>
+            <p class="process__card-text">We implement the strategy effectively.</p>
+            <a href="#" class="process__learn">
+              <span>Learn more</span>
+              <img src="./src/images/icons/arrow-right.svg" alt="">
+            </a>
+          </div>
+
+          <div class="process__card">
+            <img src="./src/images/features/features-item-icon-4.svg" alt="" class="process__icon">
+            <h3 class="process__card-title">Optimization</h3>
+            <p class="process__card-text">We monitor and improve results.</p>
+            <a href="#" class="process__learn">
+              <span>Learn more</span>
+              <img src="./src/images/icons/arrow-right.svg" alt="">
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="container testimonials__container">
+
+        <h2 class="testimonials__title">What our clients say</h2>
+
+        <div class="testimonials__cards">
+
+          <div class="testimonials__card">
+            <img src="./src/images/testimonials/testimonial-ava-2.jpg" alt="Client photo" class="testimonials__photo">
+            <p class="testimonials__text">“Working with Dia Agency was a game changer for our business.”</p>
+            <h3 class="testimonials__name">Sarah Johnson</h3>
+            <span class="testimonials__role">Marketing Director</span>
+          </div>
+
+          <div class="testimonials__card">
+            <img src="./src/images/testimonials/testimonial-ava-1.jpg" alt="Client photo" class="testimonials__photo">
+            <p class="testimonials__text">“Professional, creative and extremely dedicated.”</p>
+            <h3 class="testimonials__name">Michael Smith</h3>
+            <span class="testimonials__role">CEO — Vision Corp</span>
+          </div>
+
+          <div class="testimonials__card">
+            <img src="./src/images/testimonials/testimonial-ava-3.jpg" alt="Client photo" class="testimonials__photo">
+            <p class="testimonials__text">“Their process is smooth and efficient.”</p>
+            <h3 class="testimonials__name">Emily Davis</h3>
+            <span class="testimonials__role">Product Manager</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="vision" id="vision">
+      <div class="container vision__container">
+
+        <div class="vision__content">
+          <h2 class="vision__title">Our Vision</h2>
+          <p class="vision__text">
+            We believe in creating meaningful digital experiences that connect brands with people.
+          </p>
+
+          <ul class="vision__list">
+            <li class="vision__item">Human‑centered design</li>
+            <li class="vision__item">Data‑driven decisions</li>
+            <li class="vision__item">Long‑term partnerships</li>
+          </ul>
+
+          <a href="#contact" class="vision__btn">Learn More</a>
+        </div>
+
+        <div class="vision__image">
+          <img
+            src="./src/images/what-we-do/what-we-do-2.jpg"
+            alt="Team working on strategy"
+            class="vision__image-img"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <section class="message" id="message">
+      <div class="container message__container">
+
+        <div class="message__content">
+          <h2 class="message__title">Let’s Build Something Great Together</h2>
+          <p class="message__text">
+            Whether you’re looking to elevate your brand or create a new digital experience — we’re here to help.
+          </p>
+
+          <a href="#contact" class="message__btn">Get in Touch</a>
+        </div>
+
+        <div class="message__image">
+          <img
+            src="./src/images/what-we-do/what-we-do-3.jpg"
+            alt="Team collaboration"
+            class="message__image-img"
+          >
+        </div>
+
+      </div>
+    </section>
+
+<section class="portfolio" id="portfolio">
+  <div class="container portfolio__container">
+
+    <h2 class="portfolio__title">Our Portfolio</h2>
+
+    <div class="portfolio__grid">
+
+      <div class="portfolio__item">
+        <img src="./src/images/what-we-do/what-we-do-1.jpg" alt="Project 1" class="portfolio__image">
+        <h3 class="portfolio__name">Brand Identity</h3>
+      </div>
+
+      <div class="portfolio__item">
+        <img src="./src/images/what-we-do/what-we-do-2.jpg" alt="Project 2" class="portfolio__image">
+        <h3 class="portfolio__name">Website Redesign</h3>
+      </div>
+
+      <div class="portfolio__item">
+        <img src="./src/images/what-we-do/what-we-do-3.jpg" alt="Project 3" class="portfolio__image">
+        <h3 class="portfolio__name">Mobile App UI</h3>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <section class="contact" id="contact">
+
+      <div class="container contact__top">
+
+        <div class="contact__info">
+          <h2 class="contact__title">Get in Touch</h2>
+          <p class="contact__text">
+            Have a project in mind or want to collaborate?  
+            Send us a message and we’ll get back to you shortly.
+          </p>
+
+          <ul class="contact__details">
+            <li class="contact__detail">
+              <img src="./src/images/icons/mail.svg" alt="">
+              contact@diaagency.com
+            </li>
+            <li class="contact__detail">
+              <img src="./src/images/icons/phone.svg" alt="">
+              +1 (555) 123‑4567
+            </li>
+            <li class="contact__detail">
+              <img src="./src/images/icons/location.svg" alt="">
+              123 Creative Street, New York, USA
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact__image">
+          <img src="./src/images/Shapes.png" alt="Creative workspace" class="contact__image-img">
+        </div>
+
+      </div>
+
+      <div class="container contact__bottom">
+
+        <form class="contact__form">
+          <div class="contact__group">
+            <input type="text" class="contact__input" placeholder="Your Name" required>
+          </div>
+
+          <div class="contact__group">
+            <input type="email" class="contact__input" placeholder="Your Email" required>
+          </div>
+
+          <div class="contact__group">
+            <textarea class="contact__textarea" placeholder="Your Message" required></textarea>
+          </div>
+
+          <button type="submit" class="contact__btn">Send Message</button>
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer__container">
+
+      <div class="footer__brand">
+        <img
+          src="./src/images/logo/dia-logo.svg"
+          alt="Dia Agency"
+          class="footer__logo"
+        >
+        <p class="footer__description">
+          Building meaningful digital experiences through strategy, creativity and innovation.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <h3 class="footer__title">Navigation</h3>
+        <ul class="footer__list">
+          <li><a href="#home" class="footer__link">Home</a></li>
+          <li><a href="#who" class="footer__link">About</a></li>
+          <li><a href="#expertise" class="footer__link">Services</a></li>
+          <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+          <li><a href="#contact" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Follow us</h3>
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">Instagram</a></li>
+          <li><a href="#" class="footer__link">LinkedIn</a></li>
+          <li><a href="#" class="footer__link">Twitter</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./src/scripts/main.js"></script>
+</body>
 </html>
+

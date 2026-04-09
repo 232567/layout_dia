@@ -1,7 +1,13 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
+@use './utils/index' as *;
 
-body {
-  background: $c-gray;
-}
+@use './blocks/header';
+@use './blocks/agency';
+@use './blocks/who';
+@use './blocks/expertise';
+@use './blocks/process';
+@use './blocks/testimonials';
+@use './blocks/vision';
+@use './blocks/message';
+@use './blocks/contact';
+@use './blocks/footer';
+@use './blocks/portfolio';

@@ -1,0 +1,93 @@
+@use '../utils/index' as *;
+
+.contact {
+  padding: 120px 0;
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 42px;
+    font-weight: 700;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    font-size: 18px;
+    opacity: 0.85;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__detail {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 16px;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  &__image-img {
+    width: 100%;
+    height: 420px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 16px;
+  }
+
+  &__textarea {
+    resize: none;
+    height: 160px;
+  }
+
+  &__btn {
+    padding: 16px;
+    border-radius: 8px;
+
+    font-weight: 600;
+    color: #fff;
+
+    background: #111;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
