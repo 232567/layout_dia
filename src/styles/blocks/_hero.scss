@@ -2,50 +2,59 @@
 
 .hero {
   position: relative;
-  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 680px;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 360px;
+}
+
+.hero__slider {
+  position: absolute;
+  right: -54px;
+  bottom: 0;
 
   overflow: hidden;
 
-  padding: 160px 0 140px;
+  width: 687px;
+  height: 680px;
+  border-radius: 30px 0;
+}
 
-  color: $color-white;
+.hero__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  background-color: $color-black;
+.slider {
+  position: absolute;
+  bottom: 48px;
+  left: 48px;
 
-  &__container {
-    @include container;
+  display: flex;
+  gap: 16px;
+}
 
-    position: relative;
-    z-index: 3;
-    max-width: 700px;
-  }
+.slider__button {
+  cursor: pointer;
 
-  &__title {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 1.1;
-  }
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
 
-  &__subtitle {
-    font-size: 24px;
-    opacity: 0.9;
-  }
+  transition: 0.3s;
+}
 
-  &__button {
-    display: inline-block;
-
-    padding: 16px 32px;
-    border-radius: 8px;
-
-    font-weight: 600;
-    color: $color-black;
-
-    background: $color-white;
-
-    transition: 0.3s;
-
-    &:hover {
-      background: color.adjust($color-white, $lightness: 10%);
-    }
-  }
+.slider__button:hover {
+  transform: scale(1.1);
 }

@@ -1,17 +1,23 @@
+@use '../utils/variables' as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
+
   font-family: $font-family-base;
+  font-size: 16px;
+  line-height: 1.5;
   color: $color-black;
+
   background-color: $color-white;
 }
 
@@ -25,8 +31,25 @@ a {
   text-decoration: none;
 }
 
-ul {
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
