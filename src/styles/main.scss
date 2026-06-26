@@ -89,15 +89,18 @@ body {
 }
 
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   width: 226px;
   height: 56px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background: #2060f6;
-  color: white;
   border-radius: 8px;
+
+  color: white;
   text-decoration: none;
+
+  background: #2060f6;
 }
 
 .hero__slider {
