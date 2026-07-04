@@ -1,88 +1,62 @@
-@use '../utils/index' as *;
 @use 'sass:color';
 
 .vision {
   padding: 200px 0;
-  color: $color-black;
+
   text-align: center;
-  background: url('../images/Shapes.png') center/cover no-repeat;
 
-  &__container {
-    @include container;
+  background-color: #fff;
+  background-image: url('../images/Shapes.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-    max-width: 750px;
-    text-align: center;
+.vision__title {
+  margin: 0 0 24px;
+  font-size: 52px;
+  line-height: 78px;
+  color: #253757;
+}
+
+.vision__text {
+  max-width: 754px;
+  margin: 0 auto 64px;
+
+  font-size: 24px;
+  line-height: 36px;
+  color: #6c788b;
+}
+
+.vision__button {
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.vision__button:hover {
+  transform: translateY(-3px);
+  background-color: color.scale(#2060f6, $lightness: -8%);
+}
+
+@media (max-width: 1024px) {
+  .vision {
+    padding: 160px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .vision {
+    padding: 120px 0;
   }
 
-  &__title {
-    margin-bottom: 24px;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 1.1;
+  .vision__title {
+    font-size: 44px;
+    line-height: 56px;
   }
 
-  &__text {
-    max-width: 700px;
-    margin: 0 auto 48px;
-
+  .vision__text {
     font-size: 20px;
-    line-height: 1.6;
-    color: #333;
-  }
-
-  &__btn {
-    cursor: pointer;
-
-    display: inline-block;
-
-    padding: 18px 40px;
-    border-radius: 8px;
-
-    font-size: 18px;
-    font-weight: 600;
-    color: $color-white;
-
-    background: $color-accent;
-
-    transition: 0.3s ease;
-
-    &:hover {
-      transform: translateY(-4px);
-      background: color.scale($color-accent, $lightness: -8%);
-    }
-
-    &:active {
-      transform: translateY(-1px);
-    }
-  }
-
-  /* ===== RESPONSIVIDADE ===== */
-  @media (max-width: #{$bp-md}) {
-    padding: 100px 0;
-
-    &__title {
-      font-size: 38px;
-    }
-
-    &__text {
-      font-size: 18px;
-    }
-
-    &__btn {
-      width: 100%;
-      padding: 16px 0;
-    }
-  }
-
-  @media (max-width: #{$bp-sm}) {
-    padding: 80px 0;
-
-    &__title {
-      font-size: 32px;
-    }
-
-    &__text {
-      font-size: 16px;
-    }
+    line-height: 32px;
   }
 }

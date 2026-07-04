@@ -1,56 +1,44 @@
-@use '../utils/index' as *;
-
 .footer {
-  padding: 40px 0;
-  background: $color-black;
+  padding: 40px 0 80px;
+  background: #2c2c2c;
+}
 
-  &__container {
-    @include container;
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    justify-content: space-between;
+.footer__list {
+  display: flex;
+  gap: 48px;
 
-    @media (max-width: #{$bp-md}) {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
+  margin: 0;
+  padding: 0;
 
-  &__logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: $color-white;
-    transition: opacity 0.3s ease;
+  list-style: none;
+}
 
-    &:hover {
-      opacity: 0.7;
-    }
-  }
+.footer__link {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 
-  &__nav {
-    display: flex;
-    gap: 32px;
+  transition: color 0.3s;
+}
 
-    a {
-      color: rgba($color-white, 0.7);
-      transition: color 0.3s ease;
+.footer__link:hover {
+  color: #2060f6;
+}
 
-      &:hover {
-        color: $color-white;
-      }
-    }
-
-    @media (max-width: #{$bp-md}) {
-      flex-wrap: wrap;
-      gap: 16px;
-      justify-content: center;
-    }
-  }
-
-  &__copyright {
-    font-size: 14px;
-    color: rgba($color-white, 0.5);
+@media (max-width: 640px) {
+  .footer__container,
+  .footer__list {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
   }
 }

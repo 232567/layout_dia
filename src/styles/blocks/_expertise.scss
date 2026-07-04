@@ -1,65 +1,73 @@
-@use '../utils/index' as *;
-
 .expertise {
-  padding: 120px 0;
-  background: #f8f8f8;
+  padding: 128px 0;
+  border-radius: 30px;
+  background: #fff;
+}
 
-  &__container {
-    @include container;
+.expertise__title {
+  margin: 0 0 64px;
+
+  font-size: 52px;
+  line-height: 78px;
+  color: #253757;
+  text-align: center;
+}
+
+.expertise__cards {
+  display: flex;
+  gap: 56px;
+  justify-content: space-between;
+}
+
+.expertise__card {
+  max-width: 264px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.expertise__card:hover {
+  transform: translateY(-10px);
+}
+
+.expertise__image {
+  width: 184px;
+  height: 166px;
+  margin-bottom: 40px;
+  object-fit: contain;
+}
+
+.expertise__card-title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #253757;
+}
+
+.expertise__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6c788b;
+}
+
+@media (max-width: 1024px) {
+  .expertise__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .expertise {
+    padding: 72px 0;
   }
 
-  &__title {
-    margin-bottom: 48px;
-    font-size: 42px;
-    font-weight: 700;
-    text-align: center;
+  .expertise__title {
+    font-size: 44px;
+    line-height: 56px;
   }
 
-  &__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-
-    @media (max-width: 1024px) {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @media (max-width: 640px) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  &__card {
-    padding: 40px 30px;
-    border-radius: 12px;
-
-    background: #fff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease;
-
-    &:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  &__icon {
-    width: 60px;
-    margin-bottom: 20px;
-  }
-
-  &__card-title {
-    margin-bottom: 12px;
-    font-size: 24px;
-    font-weight: 600;
-  }
-
-  &__card-text {
-    font-size: 16px;
-    line-height: 1.6;
-    opacity: 0.8;
+  .expertise__cards {
+    gap: 56px;
   }
 }
